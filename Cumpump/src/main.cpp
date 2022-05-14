@@ -44,9 +44,9 @@ long interval = 1000;
 #endif
 
 float cum_time = 0.0;
-float cum_speed = 0.0;
-float cum_size = 3200.0;
-float cum_accel = 10000.0;
+float cum_speed = 1000.0;
+float cum_size = 0.0;
+float cum_accel = 0.0;
 
 // Variable to store if sending data was successful
 String success;
@@ -109,7 +109,7 @@ void OnDataRecv(const uint8_t * mac, const uint8_t *incomingData, int len) {
     break;
     case CUMSIZE:
     {
-     cum_size = incomingcontrol.esp_value * 3200;
+     cum_size = incomingcontrol.esp_value * 1500;
     }
     break;
     case CUMACCEL:

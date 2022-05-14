@@ -1,10 +1,17 @@
 # OSSM-CUM(LUBE)-ADDON
 
+Peristaltic Lube Pump with 3/8 Silikone Tubing Capable of 4L/min for Countinues Lubing or Creampiesimulation.
+
+
+Quote from KinkMakers Discord: 
+
+>The TL:DR on a 3/8" tubing modified BD Chance L or Rex L is, well, the pump is the limiting factor, and the reduction right at the end rather than being the entire tubing length >makes for a hell of a shot, provided that's what you're going for. It runs almost the same speed as the pump unloaded as with a toy on the end, which is to say, using a decently >thick mixture of X-lube, about 4L/min. More than enough to satisfy all but the most extreme cases of cream-pies, bordering into straight "Cum inflation" territory.
+
 ![Final Addon](Assembled.jpg?raw=true "Housing Motor" )
 
 Max Power Possible with Thick Mixture of X-Lube is 4L/min.
 
-## Electrical Parts Needed:
+# Electrical Parts Needed:
 
 | Quantity | Part | Sourcing EU | Price € |
 |----------|------|-------------|---------|
@@ -16,9 +23,9 @@ Max Power Possible with Thick Mixture of X-Lube is 4L/min.
 | 1x | Soilder Breadboard | https://www.amazon.de/AZDelivery-Lochrasterplatte-Lochrasterplatine-Leiterplatte-Arduino/dp/B078HV79XX/ | 1 € |
 
 
-## Connection Diagram 
+# Connection Diagram:
 
-C3 Pins to Level Shivter to Stepper driver 
+Connect Stepper Pins to Level Shivter to C3 Stamp 
 
 | Stepper PIN | Level Shiverter Hi | Level Shivter LOW | C3 Stamp |
 |-|-|-|-|
@@ -35,7 +42,7 @@ LM7805 Check Datasheet for Pinout normaly Top Sight from left to right is:
 |-|-|-|
 | 12V Parrallel on Driver | GND Parrallel on Driver on C3 Stamp| 5V to C3 
 
-## Hardware Needed
+# Hardware Needed:
 
 Nema 23 Peristaltic Pump comes from this Thingivers: https://www.thingiverse.com/thing:4797064
 
@@ -49,7 +56,7 @@ Parts to Buy
 | 4x | M5x45 Screw + Nut || 
 | 1x | 9mm ID x OD 12mm Siliconetube food safe Qualtiy | https://www.amazon.de/gp/product/B07T12V62M/ | 10 € |
 
-## 3D Printed Parts 
+# 3D Printed Parts:
 
 | Quantity | Part | Info | 3D Print Paramters 
 |----------|------|---|---|
@@ -59,7 +66,7 @@ Parts to Buy
 
 ![Housing Motor](Hardware/housing.jpg?raw=true "Housing Motor")
 
-## Assembly
+# Assembly:
 
 1. Heatset M2 Nut into Rotor Holes on Side 
 2. Put Bearing in Rotor with M5x25 Screw and Nut Screw 3 Times 
@@ -68,7 +75,7 @@ Parts to Buy
 5. Put Tubing in between housing and Bearing 
 6. Close Housing with M5 Screw
 
-## Software
+# Software:
 
 Software is right now in State with the OSSM M5 Remote https://github.com/ortlof/OSSM-M5-Remote
 Clone the git in folder Cumpump and open Workspace with VS Code and Flash with plaformio.

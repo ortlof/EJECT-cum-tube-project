@@ -11,6 +11,8 @@ Quote from KinkMakers Discord:
 
 Max Power Possible with Thick Mixture of X-Lube is 4L/min.
 
+Mainbranch is M5Stamp C3 -> ESP32 Branch is here https://github.com/ortlof/OSSM-Cum-Addon/tree/esp32dev
+
 # Electrical Parts Needed:
 
 | Quantity | Part | Sourcing EU | Price € |

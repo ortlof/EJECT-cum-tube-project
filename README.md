@@ -78,6 +78,11 @@ Parts to Buy
 5. Put Tubing in between housing and Bearing 
 6. Close Housing with M5 Screw
 
+# Dip Swtiches on tb6600
+
+1 2 3 4 OFF 
+5 6 ON
+
 # Software:
 
 Software is right now in State with the OSSM M5 Remote https://github.com/ortlof/OSSM-M5-Remote

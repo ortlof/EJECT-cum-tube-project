@@ -78,7 +78,6 @@ typedef struct struct_message {
   int esp_command;
   float esp_value;
   int esp_target;
-  int esp_source;
 } struct_message;
 
 bool esp_connect = false;
@@ -159,7 +158,6 @@ bool SendCommand(int Command, float Value){
   outgoingcontrol.esp_command = Command;
   outgoingcontrol.esp_value = Value;
   outgoingcontrol.esp_target = M5_ID;
-  outgoingcontrol.esp_source = EJECT_ID;
   esp_err_t result = esp_now_send(M5_Remote_Address, (uint8_t *) &outgoingcontrol, sizeof(outgoingcontrol));
 
   if (result == ESP_OK) {
@@ -204,7 +202,7 @@ void setup()
   digitalWrite(MOTOR_ENA_PIN, LOW);
   stepper.connectToPins(MOTOR_STEP_PIN, MOTOR_DIRECTION_PIN);
 
-  SendCommand(CUMCONN, 0);
+  SendCommand(CUMCONN, EJECT_ID);
 }
 
 void loop()
@@ -218,7 +216,7 @@ void loop()
     stepper.moveRelativeInSteps(reverse ? -cum_size : cum_size);
 
     if (!continuous) {
-      SendCommand(CUMTOGGLE, 0);
+      SendCommand(CUMTOGGLE, EJECT_ID);
       ejecting = false;
     }
   } else {
